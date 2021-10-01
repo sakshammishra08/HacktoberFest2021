@@ -24,6 +24,18 @@ void Stack::pop() {
       top--;
    }
 }
+// Use to find the top of Stack
+void Stack::peek()
+{
+    if (top < 0) {
+        cout << "Stack is Empty";
+        return 0;
+    }
+    else {
+        int x = stack[top];
+        return x;
+    }
+}
 void Stack::display() {
    if(top>= 0) {
       cout<<"Stack elements are:";
